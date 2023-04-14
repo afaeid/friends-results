@@ -69,7 +69,7 @@ body {
 }
 
 .excellent-result::after {
- background: linear-gradient(#7ED979, #E3EF84);
+ background: linear-gradient(-40deg, #7ED979, #E3EF84);
  color: #000000;
 }
 

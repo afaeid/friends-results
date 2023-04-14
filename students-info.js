@@ -1,7 +1,7 @@
 /**
  * Count total number of a student
  * @param {object} obj receive the current object
-*/
+ */
 var countNumber = (obj) => {
  return obj.numbers.bn1 + obj.numbers.bn2 + obj.numbers.en1 + obj.numbers.en2 + obj.numbers.math + obj.numbers.bgs + obj.numbers.sci + obj.numbers.rel + obj.numbers.ict;
 };
@@ -224,7 +224,7 @@ var students = [
    return countNumber(this)
   }
 },
-{
+ {
   name: "MD KHUSNOD FAIYAJ OIKKO",
   numbers: {
    bn1: 0,
@@ -241,7 +241,7 @@ var students = [
    return countNumber(this)
   }
 },
-{
+ {
   name: "MOHAMMAD ZAYADUR RAHMAN",
   roll: 34,
   numbers: {
@@ -259,7 +259,7 @@ var students = [
    return countNumber(this)
   }
 },
-{
+ {
   name: "MITAB AHMED",
   roll: 35,
   numbers: {
@@ -277,7 +277,7 @@ var students = [
    return countNumber(this)
   }
 },
-{
+ {
   name: "MEHARAN MAZHAR ESHAN",
   roll: 40,
   numbers: {
@@ -295,7 +295,7 @@ var students = [
    return countNumber(this)
   }
 },
-{
+ {
   name: "AL SHAHARIA NIRAV",
   roll: 41,
   numbers: {
@@ -313,7 +313,7 @@ var students = [
    return countNumber(this)
   }
 },
-{
+ {
   name: "KAZI ALIMUL ISLAM",
   roll: 46,
   numbers: {
@@ -331,7 +331,7 @@ var students = [
    return countNumber(this)
   }
 },
-{
+ {
   name: "SAYED AL AMIN",
   roll: 47,
   numbers: {
@@ -349,7 +349,7 @@ var students = [
    return countNumber(this)
   }
 },
-{
+ {
   name: "SHADMAN ISLAM NIHAL",
   roll: 48,
   numbers: {
