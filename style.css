@@ -1,7 +1,11 @@
+/* adding font */
+
 @font-face {
  src: url('Poppins-Regular.ttf');
  font-family: Poppins;
 }
+
+/* rest code */
 
 * {
  margin: 0;
@@ -22,21 +26,51 @@ body {
  display: flex;
  align-items: center;
  justify-content: center;
- flex-direction: column;
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+
+.container>h2 {
+ width: 100%;
+ text-align: center;
+ margin-bottom: 18px;
 }
 
 .card-cover {
  max-width: 100%;
  min-width: 200px;
  min-height: 200px;
- padding: 10px;
+ padding: 20px 10px 10px 10px;
  box-shadow: 0 0 4px 2px #D2D2D2;
- border-radius: 5px;
+ border-radius: 8px;
  display: flex;
  align-items: center;
  justify-content: center;
  flex-direction: column;
- margin: 15px 0px;
+ margin: 25px 15px;
+ position: relative;
+ /* margin: 30px 15px; */
+}
+
+.card-cover::after {
+ content: attr(data-merit-position);
+ position: absolute;
+ width: 50px;
+ height: 50px;
+ border-radius: 50%;
+ background-color: #fff;
+ top: -30px;
+ box-shadow: 0 0 4px 2px #D2D2D2;
+ display: flex;
+ align-items: center;
+ text-align: center;
+ justify-content: center;
+ font-weight: bold;
+}
+
+.excellent-result::after {
+ background: linear-gradient(#7ED979, #E3EF84);
+ color: #000000;
 }
 
 .number-section>div {
@@ -62,4 +96,11 @@ body {
  padding: 5px;
  text-align: center;
  color: #000;
+}
+
+/*Codes for small screen*/
+@media screen and (max-width: 500px) {
+ .card-cover {
+  margin: 25px 0px;
+ }
 }
