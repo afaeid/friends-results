@@ -369,7 +369,3 @@ var students = [
 }
 
 ];
-
-// exporting students data
-
-export { students };

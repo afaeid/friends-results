@@ -1,6 +1,4 @@
-//importing students data as a object array
- import { students as infos } from "/students-info.js";
-
+var infos = students;
 var container = document.querySelector(".container");
 /**
  * Make cards of each student 
