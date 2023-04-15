@@ -1,5 +1,5 @@
 //importing students data as a object array
-import { students as infos } from "/students-info.js";
+ import { students as infos } from "/students-info.js";
 
 var container = document.querySelector(".container");
 /**
@@ -14,24 +14,24 @@ var creatNumbers = (infos) => {
  // counting position of each student
  var position = 0;
  infos.map((info) => {
-    var cardCover = document.createElement("div");
+  var cardCover = document.createElement("div");
   position++;
-// adding classes for first 3 students
-  if(position < 4){
+  // adding classes for first 3 students
+  if (position < 4) {
    cardCover.classList.add("excellent-result");
   }
-  
-if(position == 1){
- position = `${position}st`;
-} else if (position == 2){
- position = `${position}nd`;
-}
-else if(position == 3){
- position = `${position}rd`;
-}
-else{
- position = position;
-}
+
+  if (position == 1) {
+   position = `${position}st`;
+  } else if (position == 2) {
+   position = `${position}nd`;
+  }
+  else if (position == 3) {
+   position = `${position}rd`;
+  }
+  else {
+   position = position;
+  }
   cardCover.setAttribute('data-merit-position', position)
   cardCover.classList.add("card-cover");
   cardCover.innerHTML = `
@@ -63,15 +63,15 @@ else{
    </div>
   `;
   var allInput = cardCover.querySelectorAll("div > input");
- 
+
   container.appendChild(cardCover);
-  if(position == "1st"){
+  if (position == "1st") {
    position = 1;
-  }else if(position == "2nd"){
+  } else if (position == "2nd") {
    position = 2;
-  }else if(position == "3rd"){
+  } else if (position == "3rd") {
    position = 3;
-  }else{
+  } else {
    position = position;
   }
  });
