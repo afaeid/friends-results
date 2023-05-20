@@ -1,5 +1,6 @@
 var infos = students;
 var container = document.querySelector(".container");
+
 /**
  * Make cards of each student 
  * @param {object} infos receive students data
@@ -79,3 +80,22 @@ var addNumbers = () => {
  creatNumbers(infos)
 }
 addNumbers();
+
+
+var searchbar = document.querySelector(".container > .search-cover input");
+
+var searchStudents = (e) => {
+ var cards = document.querySelectorAll("body>div.container>div.card-cover")
+ var searchValue = searchbar.value.trim().toLowerCase();
+ cards.forEach((card, index) => {
+  var cardsName = card.querySelector(".number-section").querySelectorAll("div")[0].querySelector("input").value.trim().toLowerCase();
+  if (cardsName.indexOf(searchValue) != -1) {
+   card.style.display = "flex";
+  } else {
+   card.style.display = "none"
+  }
+  // console.log(cardsName.indexOf(searchValue));
+ })
+}
+
+searchbar.addEventListener("keyup", searchStudents)

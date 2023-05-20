@@ -36,6 +36,24 @@ body {
  margin-bottom: 18px;
 }
 
+.container > .search-cover{
+ width: 100%;
+ margin-bottom: 18px;
+ display: flex;align-items: center;justify-content: center
+}
+.container > .search-cover input{
+ width: 88%;
+ height: 33px;
+ padding: 8px;
+ outline: none;
+ border: none;
+ border: 1px solid #D6D6D6;
+ border-radius: 3px
+}
+.container > .search-cover input:focus{
+ box-shadow: 0 0 2px 1px #D2D2D2;
+
+}
 .card-cover {
  max-width: 100%;
  min-width: 200px;
